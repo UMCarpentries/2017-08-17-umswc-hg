@@ -142,19 +142,18 @@ eventbrite: 35460470221          # optional: alphanumeric key for Eventbrite reg
   With registration and other general questions please send your e-mail to Peter Gergics: 
   {% if page.contact %}
     {% for contact in page.contact %}
-      {% if forloop.last and page.contact.size > 1 %}
-       . For software/hardware questions please e-mail Akima George: 
+      {% if forloop.last and page.contact.size > 1 %}. For software/hardware questions please e-mail Akima George: 
       {% else %}
         {% unless forloop.first %}
         ,
         {% endunless %}
       {% endif %}
-      <a href='mailto:{{contact}}'>{{contact}}</a>
+      <a href='mailto:{{contact}}'>{{contact}}</a>.
     {% endfor %}
   {% else %}
     to-be-announced
   {% endif %}
- .
+ 
 </p>
 
 <hr/>
